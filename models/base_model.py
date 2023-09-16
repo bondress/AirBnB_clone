@@ -20,10 +20,13 @@ class BaseModel:
                     self.__dict__[key] = datetime.strptime(value, t_format)
                 else:
                     self.__dict__[key] = value
+	else:
+		models.storage.new(self)
 
     def save(self):
         """Change updated_at to current datetime"""
         self.updated_at = datetime.now()
+	models.storage.save()
 
     def to_dict(self):
         "Return the dictionary of the BaseModel instance"
