@@ -21,11 +21,10 @@ class FileStorage:
 
     def save(self):
         """This is the save method"""
-        obdct = {}
-        for i, o in FileStorage.__objects.items():
-            obdct[i] = o.to_dict()
+        obdct = FileStorage.__objects
+        objdct = {obj: obdct[obj].to_dict() for obj in obdct.keys()}
         with open(FileStorage.__file_path, "w") as f:
-            json.dump(obdct, f)
+            json.dump(objdct, f)
 
     def reload(self):
         """This is the reload method"""
