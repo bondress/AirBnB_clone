@@ -11,7 +11,7 @@ class FileStorage:
 
     def all(self):
         """This is the all method"""
-        return self.__objects
+        return FileStorage.__objects
 
     def new(self, obj):
         """This is the new method"""
@@ -31,7 +31,6 @@ class FileStorage:
         """This is the reload method"""
         try:
             with open(FileStorage.__file_path) as f:
-                FileStorage.__objects = {}
                 obdct = json.load(f)
                 for i, o in obdct.items():
                     self.new(BaseModel(**o))
