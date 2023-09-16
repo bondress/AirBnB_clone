@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-<<<<<<< HEAD
+
 """Defines the BaseModel class."""
 import models
 from uuid import uuid4
@@ -50,7 +50,7 @@ class BaseModel:
         """Return the print/str representation of the BaseModel instance."""
         clname = self.__class__.__name__
         return "[{}] ({}) {}".format(clname, self.id, self.__dict__)
-=======
+
 """Contains class BaseModel"""
 
 import uuid
@@ -100,4 +100,3 @@ class BaseModel:
         new_dict["created_at"] = new_dict["created_at"].isoformat()
         new_dict["updated_at"] = new_dict["updated_at"].isoformat()
         return new_dict
->>>>>>> fdec0dd7e5569d1ef837a75d007fddcab79a7400
