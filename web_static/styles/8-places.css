@@ -28,6 +28,7 @@ div.price_by_night {
 	float: right;
 	font-size: 30px;
 	height: 60px;
+	line-height: 60px;
 	min-width: 60px;
 	position: relative;
 	top: -80px;
