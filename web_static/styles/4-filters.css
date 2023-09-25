@@ -1,0 +1,29 @@
+div.container {
+	margin: 30px auto;
+	max-width: 1000px;
+	text-align: center;
+}
+
+section.filters {
+	background-color: white;
+	border: 1px solid #DDDDDD;
+	border-radius: 4px;
+	height: 70px;
+	width: 100%;
+}
+
+section.filters.button{
+	background-color: #FF5A5F;
+	border: 0;
+	border-radius: 4px;
+	color: #FFFFFF;
+	float: right;
+	font-size: 18px;
+	height: 48px;
+	margin: 11px 30px;
+	width: 20%;
+}
+
+section.filters button:hover {
+	opacity: .9;
+}
